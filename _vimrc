@@ -1,7 +1,18 @@
-"on new machine try vundle for plugin management: https://github.com/gmarik/Vundle.vim
-execute pathogen#infect()
-syntax on
+set nocompatible
+filetype off
+set rtp+=~/vimfiles/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'pangloss/vim-javascript'
+
+call vundle#end()
 filetype plugin indent on
+syntax on
 
 set autoread
 set nowrap
