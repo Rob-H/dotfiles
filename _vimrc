@@ -25,11 +25,10 @@ set nowb
 set noswapfile
 
 syntax enable
-set background=dark
-colorscheme solarized
 
 set number
 set hidden
+set wildignore+=node_modules/**
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -40,6 +39,8 @@ if has("gui_running")
   " GUI is running or is about to start.
   " Maximize gvim window (for an alternative on Windows, see simalt below).
   set lines=999 columns=999
+  set background=dark
+  colorscheme solarized
 endif
 
 "my mappings
@@ -52,5 +53,5 @@ map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 let g:ctrlp_working_path_mode = 0
 
 command ScribeStarStories cd D:\Work\Product\acceptance_tests\stories | !ctags -R .
-command ScribeStarEditor cd D:\Work\Product\instance\ScribeStar.Web\Scripts\Editor | !ctags -R .
+command ScribeStarEditor cd D:\Work\Product\instance\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
 command ScribeStarSass cd D:\Work\Product\instance\ScribeStar.Web\sass
