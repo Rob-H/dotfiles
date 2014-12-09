@@ -51,6 +51,8 @@ map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
 "setup ctrlp to not use project specific settings
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore = 'node_modules'  
+
 
 command ScribeStarStories cd D:\Work\Product\acceptance_tests\stories | !ctags -R .
 command ScribeStarEditor cd D:\Work\Product\instance\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
