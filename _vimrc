@@ -9,6 +9,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,6 +54,8 @@ map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'node_modules'  
 
+"let syntastic use jshint rather than jslint
+let g:syntastic_javascript_checkers = ['jshint']
 
 command ScribeStarStories cd D:\Work\Product\acceptance_tests\stories | !ctags -R .
 command ScribeStarEditor cd D:\Work\Product\instance\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
