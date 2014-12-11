@@ -17,6 +17,12 @@ syntax on
 
 set autoread
 set nowrap
+ 
+"default tab rules
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,6 +62,8 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 "let syntastic use jshint rather than jslint
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
 
 command ScribeStarStories cd D:\Work\Product\acceptance_tests\stories | !ctags -R .
 command ScribeStarEditor cd D:\Work\Product\instance\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
