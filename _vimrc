@@ -10,6 +10,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
+Plugin 'Raimondi/delimitMate'
 
 call vundle#end()
 filetype plugin indent on
@@ -62,7 +63,6 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 "let syntastic use jshint rather than jslint
 let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 
 command ScribeStarStories cd D:\Work\Product\acceptance_tests\stories | !ctags -R .
