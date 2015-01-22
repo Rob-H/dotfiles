@@ -65,6 +65,5 @@ let g:ctrlp_custom_ignore = 'node_modules'
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_enable_signs=1
 
-command ScribeStarStories cd D:\Work\Product\acceptance_tests\stories | !ctags -R .
-command ScribeStarEditor cd D:\Work\Product\instance\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
-command ScribeStarSass cd D:\Work\Product\instance\ScribeStar.Web\sass
+command ScribeStarEditor cd D:\Work\Product\src\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
+command ScribeStarSass cd D:\Work\Product\src\ScribeStar.Web\sass
