@@ -34,7 +34,7 @@ set noswapfile
 
 syntax enable
 
-set number
+set relativenumber
 set hidden
 set wildignore+=node_modules/**
 
