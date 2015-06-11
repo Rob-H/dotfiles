@@ -1,3 +1,7 @@
+if has('win32') || has('win64')
+    set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+endif
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,7 +15,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'Raimondi/delimitMate'
-Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
@@ -21,9 +24,9 @@ set autoread
 set nowrap
  
 "default tab rules
-set tabstop=4
-set shiftwidth=4
-set expandtab
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -36,8 +39,10 @@ set noswapfile
 syntax enable
 
 set relativenumber
+set number
 set hidden
 set wildignore+=node_modules/**
+set hlsearch
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
