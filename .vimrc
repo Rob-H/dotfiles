@@ -56,6 +56,8 @@ if has("gui_running")
   set lines=999 columns=999
   set background=dark
   colorscheme solarized
+  set guioptions-=m  "remove menu bar
+  set guioptions-=T  "remove toolbar
 endif
 
 "my mappings
