@@ -14,7 +14,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
-Plugin 'Raimondi/delimitMate'
 Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
@@ -71,8 +70,9 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'node_modules'  
 
 "let syntastic use jshint rather than jslint
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_enable_signs=1
 
 command ScribeStarEditor cd D:\Work\Product\src\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
+command ScribeStarLolcat cd D:\Work\Product\src\ScribeStar.Web\Scripts\lolcat | !ctags -R --exclude=node_modules . 
 command ScribeStarSass cd D:\Work\Product\src\ScribeStar.Web\sass
