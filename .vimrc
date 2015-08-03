@@ -42,7 +42,13 @@ set relativenumber
 set number
 set hidden
 set wildignore+=node_modules/**
+set wildignore+=coverage/**
+set wildignore+=tags
 set hlsearch
+
+" get rid of error bells!
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -67,7 +73,7 @@ map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
 "setup ctrlp to not use project specific settings
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = 'node_modules'  
+let g:ctrlp_custom_ignore = { 'dir': '\node_modules$\|\coverage$\', 'files': '\tags$\' }  
 
 "let syntastic use jshint rather than jslint
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
