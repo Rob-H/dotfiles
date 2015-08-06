@@ -1,4 +1,3 @@
 # Required Setup
 	*	presumes git is installed
-	* 	presumes jshint is intalled 
-	* 	currently presumes you are on windows
+	* 	presumes jshint and jscs are intalled 
