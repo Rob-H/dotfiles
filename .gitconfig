@@ -7,5 +7,5 @@
 [diff]
 	tool = gvimdiff
 [core]
-	editor = gvim 
+	editor = gvim -f
 	excludesfile = ~/.globalgitignore
