@@ -85,6 +85,9 @@ let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_scala_checkers = ['scalac', 'scalastyle']
 let g:syntastic_enable_signs=1
 
+"setup ctags to use .tags aswell
+set tags=./.tags,.tags,./tags,tags
+
 command ScribeStarEditor cd D:\Work\Product\src\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
 command ScribeStarLolcat cd D:\Work\Product\src\ScribeStar.Web\Scripts\lolcat | !ctags -R --exclude=node_modules . 
 command ScribeStarSass cd D:\Work\Product\src\ScribeStar.Web\sass
