@@ -16,6 +16,11 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'derekwyatt/vim-scala'
 
+"snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
