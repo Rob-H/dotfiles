@@ -82,6 +82,7 @@ let g:ctrlp_custom_ignore = { 'dir': '\node_modules$\|\coverage$\', 'files': '\t
 
 "let syntastic use jshint rather than jslint
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+let g:syntastic_scala_checkers = ['scalac', 'scalastyle']
 let g:syntastic_enable_signs=1
 
 command ScribeStarEditor cd D:\Work\Product\src\ScribeStar.Web\Scripts\Editor | !ctags -R --exclude=node_modules . 
