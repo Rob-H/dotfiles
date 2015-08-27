@@ -6,4 +6,10 @@ snippet it
 	it("${1:description}") {
 		${2:body}
 	}
+snippet spec
+	import org.scalatest._
+
+	class ${1:class name} extends FunSpec with Matchers {
+		${2:body}
+	}
 
