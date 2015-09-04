@@ -49,6 +49,7 @@ set hidden
 set wildignore+=node_modules/**
 set wildignore+=coverage/**
 set wildignore+=tags
+set wildignore+=target/**
 set hlsearch
 
 " get rid of error bells!
@@ -78,9 +79,9 @@ map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
 "setup ctrlp to not use project specific settings
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = { 'dir': '\node_modules$\|\coverage$\', 'files': '\tags$\' }  
+let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|coverage$\|target$', 'file': 'tags$\|\.class$' }  
 
-"let syntastic use jshint rather than jslint
+"syntastic
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_scala_checkers = ['scalac', 'scalastyle']
 let g:syntastic_enable_signs=1
