@@ -69,7 +69,9 @@ if has("gui_running")
   colorscheme solarized
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
-  set guifont=Lucida_Console:h10:cANSI
+  if has('win32') || has('win64')
+    set guifont=Lucida_Console:h10:cANSI
+  endif
 endif
 
 "my mappings
