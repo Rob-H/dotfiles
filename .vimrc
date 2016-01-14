@@ -71,6 +71,8 @@ if has("gui_running")
   set guioptions-=T  "remove toolbar
   if has('win32') || has('win64')
     set guifont=Lucida_Console:h10:cANSI
+  else 
+    set guifont=Noto\ Mono\ 10
   endif
 endif
 
