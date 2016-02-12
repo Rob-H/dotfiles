@@ -93,3 +93,5 @@ let g:syntastic_enable_signs=1
 
 "setup ctags to use .tags aswell
 set tags=./.tags,.tags,./tags,tags
+
+set suffixesadd+=.js
