@@ -98,3 +98,12 @@ let g:syntastic_enable_signs=1
 set tags=./.tags,.tags,./tags,tags
 
 set suffixesadd+=.js
+
+function! RemoveTrailingWhiteSpace()
+  :normal mz
+  :%s/\s\+$//g
+  :normal 'z
+  :normal zz
+endfunction
+
+command! RemoveTrailingWhiteSpace call RemoveTrailingWhiteSpace()
