@@ -15,6 +15,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'scrooloose/nerdtree'
 
 "snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
