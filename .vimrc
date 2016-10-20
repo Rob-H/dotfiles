@@ -75,7 +75,7 @@ if has("gui_running")
   if has('win32') || has('win64')
     set guifont=Lucida_Console:h10:cANSI
   else 
-    set guifont=Noto\ Mono\ 10
+    set guifont=Inconsolata \12
   endif
 endif
 
