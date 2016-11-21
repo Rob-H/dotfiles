@@ -44,8 +44,8 @@ set noswapfile
 
 syntax enable
 
-set relativenumber
 set number
+set relativenumber
 set hidden
 set wildignore+=node_modules/**
 set wildignore+=coverage/**
