@@ -90,7 +90,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|coverage$\|target$', 'file': 'tags$\|\.class$' }  
 
 "syntastic
-let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+let g:syntastic_javascript_checkers = ['eslint', 'jshint', 'jscs']
 let g:syntastic_scala_checkers = ['scalac', 'scalastyle']
 let g:syntastic_enable_signs=1
 
