@@ -13,7 +13,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/nerdtree'
 
@@ -88,11 +88,6 @@ map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 "setup ctrlp to not use project specific settings
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|coverage$\|target$', 'file': 'tags$\|\.class$' }  
-
-"syntastic
-let g:syntastic_javascript_checkers = ['eslint', 'jshint', 'jscs']
-let g:syntastic_scala_checkers = ['scalac', 'scalastyle']
-let g:syntastic_enable_signs=1
 
 "setup ctags to use .tags aswell
 set tags=./.tags,.tags,./tags,tags
