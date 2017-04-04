@@ -3,11 +3,11 @@
 [push]
 	default = simple
 [merge]
-	tool = gvimdiff
+	tool = vimdiff
 [diff]
-	tool = gvimdiff
+	tool = vimdiff
 [core]
-	editor = gvim -f
+	editor = vim
 	excludesfile = ~/.globalgitignore
 [include]
     path = ~/.gitconfig.local
