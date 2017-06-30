@@ -16,6 +16,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'w0rp/ale'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/nerdtree'
+Plugin 'christoomey/vim-tmux-navigator'
 
 "snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -84,6 +85,12 @@ map <leader>n :CtrlP<cr>
 map <leader>b :CtrlPBuffer<cr>
 map <C-n> :NERDTreeToggle<cr>
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+
+"easy split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "setup ctrlp to not use project specific settings
 let g:ctrlp_working_path_mode = 0
