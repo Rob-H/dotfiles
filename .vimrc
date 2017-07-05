@@ -96,6 +96,9 @@ nnoremap <C-H> <C-W><C-H>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|coverage$\|target$', 'file': 'tags$\|\.class$' }  
 
+"setup ale fixers
+let g:ale_fixers = { 'javascript': ['eslint'] }
+
 "setup ctags to use .tags aswell
 set tags=./.tags,.tags,./tags,tags
 
