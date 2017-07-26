@@ -98,6 +98,7 @@ let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|coverage$\|target$', 'file'
 
 "setup ale fixers
 let g:ale_fixers = { 'javascript': ['eslint'] }
+let g:ale_javascript_eslint_use_global = 1
 
 "setup ctags to use .tags aswell
 set tags=./.tags,.tags,./tags,tags
