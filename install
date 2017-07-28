@@ -43,5 +43,6 @@ link ".ctags" "dotfiles/.ctags"
 link ".gitconfig" "dotfiles/.gitconfig"
 link ".globalgitignore" "dotfiles/.globalgitignore"
 link ".tmux.conf" "dotfiles/.tmux.conf"
+link ".bashrc" "dotfiles/.bashrc"
 
 popd
