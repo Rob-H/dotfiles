@@ -37,6 +37,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ./.vim/bundle/Vundle.vim
 pushd .
 cd ~/
 
+rm -rf ".vim"
 link ".vim" "dotfiles/.vim"
 link ".vimrc" "dotfiles/.vimrc"
 link ".ctags" "dotfiles/.ctags"
