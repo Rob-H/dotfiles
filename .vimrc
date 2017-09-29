@@ -17,6 +17,7 @@ Plugin 'w0rp/ale'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'digitaltoad/vim-pug'
 
 "snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
