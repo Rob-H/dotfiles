@@ -18,6 +18,8 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'vim-syntastic/syntastic'
 
 "snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -25,6 +27,9 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
 call vundle#end()
+
+let g:ale_emit_conflict_warnings = 0
+
 filetype plugin indent on
 syntax on
 
@@ -99,8 +104,19 @@ let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|coverage$\|target$', 'file'
 
 "setup ale fixers
 let g:ale_fixers = { 'javascript': ['eslint', 'standard'] }
+let g:ale_pattern_options = {'.*\.cs$' : {'ale_enabled': 0} }
 let g:ale_javascript_eslint_use_global = 1
 let g:ale_fix_on_save = 1
+
+"syntastic for only c# files
+let g:syntastic_mode_map = {
+    \ 'mode': 'passive',
+    \ 'active_filetypes': ['cs'],
+    \ 'passive_filetypes': []}
+let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
+    
+
+"omnisharp
 
 "setup ctags to use .tags aswell
 set tags=./.tags,.tags,./tags,tags
