@@ -102,5 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [[ -e ~/.functions ]] && emulate sh -c 'source ~/.functions'
+[[ -e ~/.thismachine ]] && emulate sh -c 'source ~/.thismachine'
 bindkey -v
 bindkey '^R' history-incremental-search-backward
