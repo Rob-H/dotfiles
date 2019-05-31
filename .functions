@@ -9,7 +9,7 @@ function clb {
 
 function reportLoud {
     if [ -x "$(which say)" ] ; then 
-        "$@" && say "$1 completed successfully" || ( say "$1 failed" ; false )
+        "$@" && (say "$1 completed successfully"; true) || ( say "$1 failed" ; false )
     else
         echo "say not found, sorry cannot report"
         false
