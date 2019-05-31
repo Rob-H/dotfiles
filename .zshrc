@@ -101,7 +101,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[[ -e ~/.functions ]] && emulate sh -c 'source ~/.functions'
-[[ -e ~/.thismachine ]] && emulate sh -c 'source ~/.thismachine'
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+      exec tmux
+fi
+
+[[ -e ~/.functions ]] && emulate sh -c 'source ~/.functions'
+[[ -e ~/.thismachine ]] && emulate sh -c 'source ~/.thismachine'
